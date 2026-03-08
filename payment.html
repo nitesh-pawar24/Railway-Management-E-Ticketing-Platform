@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Payment</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="container">
+        <h2>💳 Secure Payment</h2>
+        <p>Please enter your payment details to confirm your booking.</p>
+
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="bankBranch">Bank Branch:</label>
+                <input type="text" id="bankBranch" name="bankBranch" placeholder="e.g., SBI Mumbai" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cardNo">Card Number:</label>
+                <input type="text" id="cardNo" name="cardNo" placeholder="XXXX XXXX XXXX XXXX" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="expiry">Expiry Date:</label>
+                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount to Pay:</label>
+                <input type_text" id="amount" name="amount" readonly style="background: #eee; font-weight: bold;">
+            </div>
+            
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 800px;">
+        <h2>My Bookings</h2>
+        <p>Here is a list of all tickets associated with your account.</p>
+
+        <div class="report-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Train Name</th>
+                        <th>Route</th>
+                        <th>Booking Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Actions</th> 
+                    </tr>
+                </thead>
+                <tbody id="bookingsTableBody">
+                    <tr>
+                        <td colspan="7" style="text-align:center;">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <a href="index.html" class="home-button">← Back to Home</a>
+    </div>
+
+    <script src="tickets_page.js"></script>
+</body>
+</html>

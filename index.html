@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="userForm">
+            <h2 style="display: flex; justify-content: space-between; align-items: center;">
+    <span>🚂 User Registration</span>
+    <a href="view_ticket.html" title="View My Bookings" style="text-decoration: none; color: #333; font-size: 2rem;">
+        👤
+    </a>
+</h2>
+            
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mob_no">Mobile Number:</label>
+                <input type="tel" id="mob_no" name="mob_no" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Register and Book Train</button>
+            
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="admin_report.html" 
+                   style="color: #555; text-decoration: none; font-size: 0.9rem;">
+                   (📊 View Reports)
+                </a>
+            </div>
+            </form>
+    </div> <script src="main.js"></script>
+
+</body>
+</html>

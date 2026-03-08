@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Report</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <h2>📊 REPORTS </h2>
+        <p>A live summary of all data in the railway database.</p>
+
+        <div class="report-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="stat-card">
+                <h3>Total Users </h3>
+                <p id="totalUsers">Loading...</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Total Tickets Booked</h3>
+                <p id="totalBookings">Loading...</p>
+            </div>
+            
+            <div class="stat-card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">Loading...</p>
+            </div>
+        </div>
+
+        <div class="report-table-container">
+            <h3>Detailed Train Breakdown</h3>
+            <p>Popularity, tickets booked and revenue sorted by most booked.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Train Name (in order of popularity)</th>
+                        <th>Tickets Booked</th>
+                        <th>Revenue Generated</th>
+                    </tr>
+                </thead>
+                <tbody id="breakdownTableBody">
+                    <tr>
+                        <td colspan="3" style="text-align:center;">Loading data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="index.html" class="home-button">← Back to Home</a>
+    </div>
+
+    <script src="report.js"></script>
+</body>
+</html>

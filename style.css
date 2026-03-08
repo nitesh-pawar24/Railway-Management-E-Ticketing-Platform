@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box; /* Important for padding to work correctly */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submitBtn {
+    background-color: #28a745; /* Green */
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+#userIdDisplay {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: #0056b3;
+}
+/* --- Styles for Admin Report Page --- */
+
+.report-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    text-decoration: underline;
+}
+/* --- New styles for Breakdown Table --- */
+
+.report-table-container {
+    margin-top: 2.5rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.report-table-container h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.report-table-container p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Makes the borders look clean */
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Header */
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Makes the table rows alternate color slightly */
+table tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+/* --- New style for Cancel Button --- */
+
+.btn-cancel {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333; /* Darker red */
+}
+
+.btn-cancel:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}

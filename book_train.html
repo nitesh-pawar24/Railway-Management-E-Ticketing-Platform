@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Train</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="container">
+        <h2 id="welcomeMessage">Welcome!</h2>
+        <h3>Search for Trains</h3>
+        
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="source">From (Source):</label>
+                <input type="text" id="source" name="source" placeholder="e.g., Mumbai" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="destination">To (Destination):</label>
+                <input type="text" id="destination" name="destination" placeholder="e.g., Delhi" required>
+            </div>
+            
+            <button type="submit">Search Trains</button>
+        </form>
+
+        <hr style="margin: 2rem 0;">
+
+        <div id="trainList" style="display:none;">
+            <h3>Available Trains</h3>
+            <form id="selectTrainForm">
+                <div id="trainOptions"></div>
+                <button type="submit" id="nextBtn" style="display:none;">Next: Select Class</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>

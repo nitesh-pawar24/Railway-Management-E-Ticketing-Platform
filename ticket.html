@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ticket</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        /* A little extra style just for this page */
+        .ticket-container {
+            border: 2px dashed #007bff;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        .ticket-header {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .ticket-section {
+            margin-bottom: 1.5rem;
+        }
+        .ticket-section h4 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            color: #007bff;
+        }
+        .ticket-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .ticket-row strong {
+            color: #333;
+        }
+        .ticket-row span {
+            color: #555;
+            text-align: right;
+        }
+        .price-total {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: right;
+            color: #28a745;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="ticket-container" id="ticketDetails">
+            
+            <div class="ticket-header">
+                <h3>🎟 Your E-Ticket</h3>
+                <p>Status: <strong style="color: green;">CONFIRMED (Pending Payment)</strong></p>
+            </div>
+
+            <div class="ticket-section">
+                <h4>Passenger Details</h4>
+                <div class="ticket-row">
+                    <strong>Passenger:</strong>
+                    <span id="paxName">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>User ID:</strong>
+                    <span id="paxId">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>Age / Gender:</strong>
+                    <span id="paxAgeGender">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>Mobile:</strong>
+                    <span id="paxMobile">...</span>
+                </div>
+            </div>
+
+            <div class="ticket-section">
+                <h4>Journey Details</h4>
+                <div class="ticket-row">
+                    <strong>Train:</strong>
+                    <span id="trainName">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>Train No:</strong>
+                    <span id="trainNo">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>From:</strong>
+                    <span id="source">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>To:</strong>
+                    <span id="destination">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>Departure:</strong>
+                    <span id="departure">...</span>
+                </div>
+                <div class="ticket-row">
+                    <strong>Arrival:</strong>
+                    <span id="arrival">...</span>
+                </div>
+            </div>
+
+            <div class="ticket-section">
+                <h4>Booking Details</h4>
+                <div class="ticket-row">
+                    <strong>Class:</strong>
+                    <span id="className">...</span>
+                </div>
+                <div class="price-total">
+                    Total Amount: <span id="totalPrice">...</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="paymentBtn" style="margin-top: 1.5rem;">Proceed to Payment</button>
+        <button id="cancelBtn" style="margin-top: 0.5rem; background-color: #dc3545;">Cancel Booking</button>
+    </div>
+
+    <script src="ticket.js"></script>
+</body>
+</html>
